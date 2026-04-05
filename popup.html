@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { width: auto; padding: 10px; font-family: sans-serif; }
+    h3 { margin-top: 0; font-size: 16px; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+    .list-container { max-height: 200px; overflow-y: auto; background: #f9f9f9; border: 1px solid #eee; margin-bottom: 10px; }
+    ul { list-style: none; padding: 5px; margin: 0; }
+    li { padding: 3px 8px; border-bottom: 1px solid #eee; font-size: 13px; }
+    .empty { color: #999; font-style: italic; }
+    .controls { display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; margin-bottom: 10px; }
+    button { padding: 8px 0; cursor: pointer; border: 1px solid #ccc; background: #fff; border-radius: 4px; font-weight: bold; }
+    button:hover { background: #eee; }
+    .result-area { background: #eef; padding: 10px; border-radius: 4px; font-weight: bold; text-align: right; }
+  </style>
+</head>
+<body>
+  <h3>🔢 Table Cruncher</h3>
+  <div class="list-container">
+    <ul id="numberList"></ul>
+  </div>
+  <div class="controls">
+    <button id="btnSum">+</button>
+    <button id="btnSub">-</button>
+    <button id="btnMul">×</button>
+    <button id="btnDiv">÷</button>
+    <button id="btnClear">C</button>
+  </div>
+  <div class="result-area">
+    결과: <span id="resultValue">0</span>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
